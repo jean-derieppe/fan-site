@@ -1,0 +1,276 @@
+/* HTML BODY H1 P */
+html{
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+}
+
+body{
+    /* mettre seulement 2 valeur pour margin */
+    margin: 25px 10px 5px 10px;
+    background-color: #ffe6a7a4;
+}
+
+footer{
+    background-color: #bc6c25;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    /* Modifier les px du padding pour un meilleur rendu */
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: 0 3px 5px black;
+    font-size: 2.2em;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    text-shadow: 0 3px 5px black;
+    font-size: 1.7em;
+}
+
+p{
+    font-size: large;
+    padding: 20px;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffe6a7;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* <a> des liens qui redirige vers un autre site */
+a{
+    color: #bc6c25;
+    transition: all .3s;
+}
+
+.lien:hover{
+    transform: translate(0, -6px);
+    box-shadow: #eeb421 5px;
+}
+
+/* Dimension de la vidéos des chiens */
+iframe{
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ /* dimension des images de chiens */
+.jorky{
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    max-width: 850px;
+    max-height: 650px;
+}
+
+.pngD{
+    display: flex;
+    margin: auto;
+    width: 650px;
+    height: 500px;
+    transition: all .3s;
+    border-radius: 950px;
+}
+
+img:hover{
+    transform: translate(0, -6px);
+    filter: drop-shadow(6px 10px 10px #bc6c25);
+}
+
+.R-chien{
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    max-width: 650px;
+    max-height: 390px;
+}
+
+.R-chien2{
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    max-width: 540px;
+    max-height: 360px;
+}
+
+.R-chien3{
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    max-width: 750px;
+    max-height: 450px;
+}
+
+.race{
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+}
+
+/* Section pour former */
+#box{
+    display: block;
+    margin: 20px;
+    width: 47.5%;
+    height: auto;
+    background-color: #fefae0ce;
+    border-radius: 20px;
+}
+
+#box2{
+    display: block;
+    margin: 20px;
+    width: 80%;
+    background-color: #fefae0ce;
+    border-radius: 20px;
+}
+
+.header{
+    background-image: url("dogpatte1.png");
+    background-size: contain;
+    /* spécifier l'opacité pour les pattes de chiens seulement  */
+    background-color: #bc6c25;
+    height: 6vmax;
+    width: 85vmax;
+    margin: 0px 70px 20px 170px;
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* liste header */
+.list1{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+    padding-left: 200px;
+    padding-right: 120px;
+}
+
+.list1 a{
+    color: white;
+    text-decoration: none;
+}
+
+/* footer */
+.list-footer {
+    padding: 0 50px;
+}
+
+/* Title le site des chiens */
+.chiens{
+    font-size: 3vmax;
+    color: white;
+    text-shadow: 0 3px 6px black;
+}
+
+/* pattes du chien footer */
+
+.dog-pawn{
+    display: flex;
+    height: 170px;
+    width: 160px;
+}
+
+.dog-pawn:hover{
+    transform: translate(0, -6px);
+    filter: drop-shadow(0px 5px 5px white);
+}
+
+.dog-pawn-1{
+    display: flex;
+    height: 170px;
+    width: 160px;
+}
+
+.dog-pawn-1:hover{
+    transform: translate(0, -6px);
+    filter: drop-shadow(0px 5px 5px white);
+}
+
+/* Transformer les boutons complet en lien cliquable et autres effets*/
+.btn{
+    padding: 0.8vmax 1vmax;
+    cursor: pointer;
+    border: 0;
+    border-radius: 40px;
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+    font-size: 1.1vmax;
+    box-shadow: 0px 0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5a);
+    transition: all .3s ;
+    color: white;
+    text-shadow: 0 3px 6px black;
+    display: flex;
+}
+
+.btn::after{
+    content: "";
+    width: 450px;
+    height: 350px;
+    background: linear-gradient(220deg,#bc6c25 50%,#ffe6a7 100%);
+    position: absolute;
+    top: -60px;
+    left: -90px;
+    z-index: -1; 
+    transition: all .9s;
+}
+
+.btn:hover::after {
+    transform: rotate(190deg);
+}
+
+.btn:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -5px 15px 10px rgba(216, 106, 3, 0.25), -10px 10px 25px 0px rgba(172, 99, 4, 0.25);
+}
+
+.btn2{
+    border-radius: 70px;
+    margin-left: 15px;
+    padding: 2px 2px; 
+    transition: all .3s;
+    width: 175px;
+    position: absolute;
+    left: -10px;
+    top: 25px;
+    filter: drop-shadow(0px 5px 5px rgba(190, 84, 8, 0.701));
+    box-shadow: #bc6c25;
+}
+
+.btn2:hover{
+    transform: translate(0, -6px);
+    filter: drop-shadow(6px 6px 10px #bc6c25);
+}
+
+.btn3{
+    padding: 0.8vmax 1vmax;
+    font-size: 1.1vmax;
+    color: white;
+    text-shadow: 0 3px 6px black;
+    text-decoration: none;
+}
+
+.btn3:hover{
+    transform: translate(0, -6px);
+    filter: drop-shadow(6px 6px 10px #bc6c25);
+}
